@@ -1,0 +1,56 @@
+.clearfix:after {
+    clear: both;
+    display: block;
+    content: '';
+    margin: auto;
+}
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.carousel__list {    
+    list-style: none;
+    width: 100000px;
+    padding: 0px;
+    position: relative;
+}
+
+.carousel__item {
+    display: block;
+    float: left;
+    border-radius: 20px;
+    background-color: hsla(0, 6%, 83%, 0.37);
+    height: 300px;
+}
+.carousel__item p  {
+    text-align: center;
+}
+.carousel__hider {
+    overflow: hidden;
+    float: left;
+}
+.carousel__arrow--left, .carousel__arrow--right {
+    z-index: 10;
+    position: relative;
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 5px;
+}
+.carousel__arrow--left:hover, .carousel__arrow--right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+.carousel__arrow--left {
+    right: -30px;
+}
+.carousel__arrow--right {
+    left: -30px;
+}
